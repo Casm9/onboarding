@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onboarding_features/src/onboarding_library.dart';
 import 'package:sms_otp/sms_otp.dart';
 
 class SmsOtpPackage extends StatelessWidget {
@@ -8,8 +9,8 @@ class SmsOtpPackage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SmsOtp(
-        btnOnPressed: () {},
-        durationTimeOnEnd: () {},
+        btnOnPressed: () => OnboardingFeatures,
+        durationTimeOnEnd: () => OnboardingFeatures,
       ),
     );
   }

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-
 import 'packages/face_recognition_package.dart';
 import 'packages/fingerprint_auth_package.dart';
 import 'packages/ocr_reading_package.dart';
 import 'packages/sms_otp_package.dart';
 
 class OnboardingFeatures extends StatefulWidget {
-  const OnboardingFeatures({
-    super.key,
+  const OnboardingFeatures(
+      {super.key,
       this.appbarTitle = "Onboarding Features",
       this.bodyTitle = "Choose your onboarding feature.",
       this.firstBtnText = "SMS otp",
@@ -43,37 +42,30 @@ class _OnboardingFeaturesState extends State<OnboardingFeatures> {
               children: [
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SmsOtpPackage()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SmsOtpPackage()));
                     },
-                    child: Text(
-                        widget.firstBtnText
-                    )
-                ),
+                    child: Text(widget.firstBtnText)),
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FaceRecognitionPackage()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) =>
+                              const FaceRecognitionPackage()));
                     },
-                    child: Text(
-                        widget.secondBtnText
-                    )
-                ),
+                    child: Text(widget.secondBtnText)),
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const OcrReadingPackage()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const OcrReadingPackage()));
                     },
-                    child:  Text(
-                        widget.thirdBtnText
-                    )
-                ),
+                    child: Text(widget.thirdBtnText)),
                 ElevatedButton(
                     onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FingerprintAuthPackage()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) =>
+                              const FingerprintAuthPackage()));
                     },
-                    child: Text(
-                        widget.fourthBtnText
-                    )
-                )
-
+                    child: Text(widget.fourthBtnText))
               ],
             ),
           ],
