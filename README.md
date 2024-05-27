@@ -15,7 +15,7 @@ The onboarding package contains a number of useful packages that can help you wi
 
 ## Features
 
-Will be added later.
+![](https://raw.githubusercontent.com/Casm9/my-github-storage/main/onboarding_library.jpg)
 
 ## Usage
 
